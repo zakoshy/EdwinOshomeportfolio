@@ -34,57 +34,75 @@ export function Contact() {
           Get In Touch
         </h2>
         <div className="grid md:grid-cols-5 gap-10 max-w-5xl mx-auto">
-          <Card className="md:col-span-3 shadow-lg">
-            <CardHeader>
-              <CardTitle>Send me a message</CardTitle>
-              <CardDescription>
-                I&apos;m open to new opportunities and collaborations.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <Input placeholder="Your Name" required type="text" aria-label="Your Name" />
-                <Input placeholder="Your Email" required type="email" aria-label="Your Email" />
-                <Textarea
-                  placeholder="Your Message"
-                  required
-                  rows={5}
-                  aria-label="Your Message"
-                />
-                <Button
-                  type="submit"
-                  className="w-full bg-accent hover:bg-accent/90"
+          <div className="md:col-span-3 space-y-10">
+            <Card className="shadow-lg">
+              <CardHeader>
+                <CardTitle>Contact Information</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-3 group">
+                  <MapPin className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
+                  <span className="text-foreground">Nairobi, Kenya</span>
+                </div>
+                <Link
+                  href="mailto:edwin.oshome@example.com"
+                  className="flex items-center gap-3 group"
                 >
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-          <div className="md:col-span-2 flex flex-col justify-center space-y-6">
-            <div className="space-y-4">
-              <div className="flex items-center gap-3 group">
-                <MapPin className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
-                <span className="text-foreground">Nairobi, Kenya</span>
-              </div>
-              <Link
-                href="mailto:edwin.oshome@example.com"
-                className="flex items-center gap-3 group"
-              >
-                <Mail className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
-                <span className="text-foreground group-hover:text-accent transition-colors">
-                  edwin.oshome@example.com
-                </span>
-              </Link>
-              <Link
-                href="tel:+254123456789"
-                className="flex items-center gap-3 group"
-              >
-                <Phone className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
-                <span className="text-foreground group-hover:text-accent transition-colors">
-                  +254 123 456 789
-                </span>
-              </Link>
-            </div>
+                  <Mail className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
+                  <span className="text-foreground group-hover:text-accent transition-colors">
+                    edwin.oshome@example.com
+                  </span>
+                </Link>
+                <Link
+                  href="tel:+254123456789"
+                  className="flex items-center gap-3 group"
+                >
+                  <Phone className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
+                  <span className="text-foreground group-hover:text-accent transition-colors">
+                    +254 123 456 789
+                  </span>
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="shadow-lg">
+              <CardHeader>
+                <CardTitle>Send me a message</CardTitle>
+                <CardDescription>
+                  I&apos;m open to new opportunities and collaborations.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <Input
+                    placeholder="Your Name"
+                    required
+                    type="text"
+                    aria-label="Your Name"
+                  />
+                  <Input
+                    placeholder="Your Email"
+                    required
+                    type="email"
+                    aria-label="Your Email"
+                  />
+                  <Textarea
+                    placeholder="Your Message"
+                    required
+                    rows={5}
+                    aria-label="Your Message"
+                  />
+                  <Button
+                    type="submit"
+                    className="w-full bg-accent hover:bg-accent/90"
+                  >
+                    Send Message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="md:col-span-2">
+            {/* This space can be used for an image or other content in the future */}
           </div>
         </div>
       </div>
