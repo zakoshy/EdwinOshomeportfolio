@@ -23,6 +23,12 @@
       "description": "Placeholder image for a hospital portal project",
       "imageUrl": "https://picsum.photos/seed/hospital/600/400",
       "imageHint": "hospital building"
+    },
+    {
+      "id": "project-contentflow",
+      "description": "Placeholder image for a ContentFlow AI project",
+      "imageUrl": "https://picsum.photos/seed/contentflow/600/400",
+      "imageHint": "social media schedule"
     }
   ]
 }

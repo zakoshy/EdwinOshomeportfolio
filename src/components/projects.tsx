@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import {
@@ -49,9 +52,32 @@ const projectData = [
     liveUrl: '#',
     githubUrl: '#',
   },
+  {
+    id: 'contentflow-ai',
+    title: 'ContentFlow AI',
+    description:
+      'Helps businesses and content creators post content on social media platforms, saving time.',
+    image: PlaceHolderImages.find((p) => p.id === 'project-contentflow'),
+    liveUrl: '#',
+    githubUrl: '#',
+  },
 ];
 
+const PROJECTS_VISIBLE_INITIALLY = 4;
+
 export function Projects() {
+  const [visibleProjects, setVisibleProjects] = useState(
+    PROJECTS_VISIBLE_INITIALLY
+  );
+
+  const showMore = () => {
+    setVisibleProjects(projectData.length);
+  };
+
+  const showLess = () => {
+    setVisibleProjects(PROJECTS_VISIBLE_INITIALLY);
+  };
+
   return (
     <section id="projects" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -59,7 +85,7 @@ export function Projects() {
           My Projects
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {projectData.map((project) => (
+          {projectData.slice(0, visibleProjects).map((project) => (
             <Card
               key={project.id}
               className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
@@ -98,6 +124,19 @@ export function Projects() {
             </Card>
           ))}
         </div>
+        {projectData.length > PROJECTS_VISIBLE_INITIALLY && (
+          <div className="mt-12 text-center">
+            {visibleProjects < projectData.length ? (
+              <Button onClick={showMore} variant="outline">
+                Show More
+              </Button>
+            ) : (
+              <Button onClick={showLess} variant="outline">
+                Show Less
+              </Button>
+            )}
+          </div>
+        )}
       </div>
     </section>
   );
