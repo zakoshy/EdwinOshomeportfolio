@@ -25,28 +25,21 @@ export function Profile() {
             <Card className="shadow-lg">
               <CardContent className="p-8 space-y-4">
                 <p className="text-lg text-foreground">
-                  I’m Edwin Oshome, a passionate Fullstack Developer and
-                  Biomedical Engineer dedicated to building innovative digital
-                  solutions that bridge technology and real-world impact. Over
-                  the years, I’ve designed and developed websites and systems
-                  for a wide range of organizations—from small businesses and
-                  youth groups to large institutions such as universities,
-                  hospitals, and churches.
+                  I’m Edwin Oshome, a Fullstack Developer and Biomedical
+                  Engineer with a passion for creating scalable, interactive,
+                  and future-ready digital solutions. I have built websites and
+                  systems for diverse organizations—including churches, youth
+                  groups, universities, and hospitals—always tailoring each
+                  project to meet real-world needs.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Beyond traditional web development, I integrate AI-powered
-                  features into almost every solution I create. For instance, I
-                  developed Content Flow AI, an intelligent system that
-                  automates and streamlines social media posting—helping
-                  organizations save time while maintaining consistency and
-                  engagement.
-                </p>
-                <p className="text-lg text-muted-foreground">
-                  With a strong foundation in both engineering and software
-                  development, I focus on delivering platforms that are not only
-                  functional and scalable but also interactive, efficient, and
-                  future-ready. My goal is to craft technology that empowers
-                  people, simplifies workflows, and creates lasting value.
+                  Beyond web development, I specialize in integrating
+                  AI-powered features that enhance efficiency and engagement;
+                  one example is Content Flow AI, a tool I developed to
+                  streamline social media posting and save valuable time for
+                  users. My approach blends engineering precision with
+                  innovative software design, ensuring every platform I deliver
+                  is impactful, user-friendly, and intelligent.
                 </p>
               </CardContent>
             </Card>
