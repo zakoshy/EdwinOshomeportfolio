@@ -52,7 +52,7 @@ export default function Home() {
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Instagram className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
-            <Link href="https://www.linkedin.com/in/zakayo-oshome-b627b52b5" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/edwin-oshome-b627b52b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
           </div>
