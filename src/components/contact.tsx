@@ -11,7 +11,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 
 export function Contact() {
@@ -62,7 +62,11 @@ export function Contact() {
           </Card>
           <div className="md:col-span-2 flex flex-col justify-center space-y-6">
             <div className="space-y-4">
-               <Link
+              <div className="flex items-center gap-3 group">
+                <MapPin className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
+                <span className="text-foreground">Nairobi, Kenya</span>
+              </div>
+              <Link
                 href="mailto:edwin.oshome@example.com"
                 className="flex items-center gap-3 group"
               >
@@ -72,25 +76,12 @@ export function Contact() {
                 </span>
               </Link>
               <Link
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+254123456789"
                 className="flex items-center gap-3 group"
               >
-                <Linkedin className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
+                <Phone className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
                 <span className="text-foreground group-hover:text-accent transition-colors">
-                  LinkedIn
-                </span>
-              </Link>
-              <Link
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 group"
-              >
-                <Github className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
-                <span className="text-foreground group-hover:text-accent transition-colors">
-                  GitHub
+                  +254 123 456 789
                 </span>
               </Link>
             </div>
