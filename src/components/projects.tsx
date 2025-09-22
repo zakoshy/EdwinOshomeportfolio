@@ -39,8 +39,8 @@ const projectData = [
     description:
       'A robust portal system for a university, handling student information and course management.',
     image: '/university.jpg',
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://university-frontend-t3q7.onrender.com',
+    githubUrl: 'https://github.com/zakoshy/university-frontend',
   },
   {
     id: 'hospital-portal',
