@@ -21,8 +21,8 @@ const projectData = [
     description:
       'A comprehensive website for a local church, featuring event management and community forums.',
     image: '/church.jpg',
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://www.ifcchangara.co.ke/',
+    githubUrl: 'https://github.com/zakoshy/changara-ifc',
   },
   {
     id: 'youth-platform',
