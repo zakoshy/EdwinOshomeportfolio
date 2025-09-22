@@ -57,8 +57,8 @@ const projectData = [
     description:
       'Helps businesses and content creators post content on social media platforms, saving time.',
     image: '/contentflow.jpg',
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://contentflow-roan.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/contentflow',
   },
 ];
 
