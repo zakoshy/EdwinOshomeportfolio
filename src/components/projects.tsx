@@ -48,8 +48,8 @@ const projectData = [
     description:
       'A secure portal for a hospital, managing patient records and appointments.',
     image: '/hospital.jpg',
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://hospital-frontend-amber.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/Hospital-frontend',
   },
   {
     id: 'contentflow-ai',
