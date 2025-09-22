@@ -40,19 +40,19 @@ export default function Home() {
       <footer className="bg-primary py-6 text-primary-foreground">
         <div className="container mx-auto px-4 flex flex-col items-center gap-4">
           <div className="flex gap-4">
-            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter">
+            <Link href="https://twitter.com/edwindeZak74715" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter">
               <Twitter className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <Link href="https://www.facebook.com/profile.php?id=100077827940933" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <Facebook className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <Link href="https://wa.me/254741157757" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                 <WhatsAppIcon className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Instagram className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/zakayo-oshome-b627b52b5" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
           </div>
