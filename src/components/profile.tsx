@@ -14,8 +14,8 @@ export function Profile() {
               <Image
                 src="/profile.jpg"
                 alt="Edwin Oshome"
-                width={250}
-                height={250}
+                width={300}
+                height={300}
                 className="rounded-full object-cover border-4 border-card shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl"
               />
               <div className="absolute inset-0 rounded-full bg-accent opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
