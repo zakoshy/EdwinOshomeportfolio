@@ -9,7 +9,7 @@ export function Profile() {
           About Me
         </h2>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-center max-w-5xl mx-auto">
-          <div className="md:col-span-1 flex justify-center">
+          <div className="md:col-span-1 flex justify-center items-center">
             <div className="relative group">
               <Image
                 src="/profile.jpg"
