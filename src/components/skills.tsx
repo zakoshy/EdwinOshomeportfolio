@@ -1,4 +1,4 @@
-import { Code, Database, Server, Atom, HeartPulse, BrainCircuit, Dna, FlaskConical, Wind, Wrench } from 'lucide-react';
+import { Code, Database, Server, Atom, HeartPulse, BrainCircuit, Dna, FlaskConical, Wind, Wrench, Scan, Settings } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 
@@ -6,6 +6,7 @@ const devSkills = [
   { name: 'JavaScript', level: 95, icon: <Code className="h-6 w-6 text-accent" /> },
   { name: 'TypeScript', level: 90, icon: <Code className="h-6 w-6 text-accent" /> },
   { name: 'React / Next.js', level: 90, icon: <Atom className="h-6 w-6 text-accent" /> },
+  { name: 'React Native', level: 85, icon: <Atom className="h-6 w-6 text-accent" /> },
   { name: 'Node.js', level: 85, icon: <Server className="h-6 w-6 text-accent" /> },
   { name: 'MongoDB', level: 80, icon: <Database className="h-6 w-6 text-accent" /> },
   { name: 'Tailwind CSS', level: 95, icon: <Wind className="h-6 w-6 text-accent" /> },
@@ -14,8 +15,10 @@ const devSkills = [
 const bioSkills = [
     { name: 'Biomedical Signal Processing', level: 85, icon: <BrainCircuit className="h-6 w-6 text-accent" /> },
     { name: 'Medical Equipment Maintenance', level: 90, icon: <Wrench className="h-6 w-6 text-accent" /> },
+    { name: 'Radiology Equipment (CT, X-ray, MRI)', level: 80, icon: <Scan className="h-6 w-6 text-accent" /> },
     { name: 'Dental Chair Servicing', level: 88, icon: <HeartPulse className="h-6 w-6 text-accent" /> },
     { name: 'Lab & Endoscopy Equipment', level: 82, icon: <FlaskConical className="h-6 w-6 text-accent" /> },
+    { name: 'Control Engineering', level: 78, icon: <Settings className="h-6 w-6 text-accent" /> },
 ];
 
 
