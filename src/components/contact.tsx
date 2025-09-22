@@ -42,24 +42,24 @@ export function Contact() {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3 group">
                   <MapPin className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
-                  <span className="text-foreground">Nairobi, Kenya</span>
+                  <span className="text-foreground">Mombasa, Kenya</span>
                 </div>
                 <Link
-                  href="mailto:edwin.oshome@example.com"
+                  href="mailto:edwinoshome37@gmail.com"
                   className="flex items-center gap-3 group"
                 >
                   <Mail className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
                   <span className="text-foreground group-hover:text-accent transition-colors">
-                    edwin.oshome@example.com
+                    edwinoshome37@gmail.com
                   </span>
                 </Link>
                 <Link
-                  href="tel:+254123456789"
+                  href="tel:+254741157757"
                   className="flex items-center gap-3 group"
                 >
                   <Phone className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
                   <span className="text-foreground group-hover:text-accent transition-colors">
-                    +254 123 456 789
+                    +254 741 157 757
                   </span>
                 </Link>
               </CardContent>
