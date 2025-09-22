@@ -15,16 +15,20 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 
 export function Contact() {
-  const { toast } = useToast();
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // In a real app, you'd handle form submission here.
-    toast({
-      title: 'Message Sent!',
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    (e.target as HTMLFormElement).reset();
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const message = formData.get('message') as string;
+
+    const subject = `Message from ${name} via portfolio`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    
+    window.location.href = `mailto:edwinoshome37@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    form.reset();
   };
 
   return (
@@ -74,18 +78,21 @@ export function Contact() {
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <Input
+                    name="name"
                     placeholder="Your Name"
                     required
                     type="text"
                     aria-label="Your Name"
                   />
                   <Input
+                    name="email"
                     placeholder="Your Email"
                     required
                     type="email"
                     aria-label="Your Email"
                   />
                   <Textarea
+                    name="message"
                     placeholder="Your Message"
                     required
                     rows={5}
