@@ -11,7 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Github, Globe } from 'lucide-react';
 import Link from 'next/link';
 
@@ -21,7 +20,7 @@ const projectData = [
     title: 'Church Website',
     description:
       'A comprehensive website for a local church, featuring event management and community forums.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-church'),
+    image: '/church.jpg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -30,7 +29,7 @@ const projectData = [
     title: 'Youth Group Platform',
     description:
       'An engaging platform for youth groups with resource sharing and activity coordination.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-youth'),
+    image: '/youth.jpg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -39,7 +38,7 @@ const projectData = [
     title: 'University Portal System',
     description:
       'A robust portal system for a university, handling student information and course management.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-university'),
+    image: '/university.jpg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -48,7 +47,7 @@ const projectData = [
     title: 'Hospital Portal',
     description:
       'A secure portal for a hospital, managing patient records and appointments.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-hospital'),
+    image: '/hospital.jpg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -57,7 +56,7 @@ const projectData = [
     title: 'ContentFlow AI',
     description:
       'Helps businesses and content creators post content on social media platforms, saving time.',
-    image: PlaceHolderImages.find((p) => p.id === 'project-contentflow'),
+    image: '/contentflow.jpg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -92,13 +91,11 @@ export function Projects() {
             >
               <div className="relative aspect-video w-full overflow-hidden">
                 <Image
-                  src={
-                    project.image?.imageUrl || 'https://picsum.photos/600/400'
-                  }
+                  src={project.image}
                   alt={project.title}
-                  fill
+                  width={600}
+                  height={400}
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  data-ai-hint={project.image?.imageHint}
                 />
               </div>
               <CardHeader>
