@@ -19,11 +19,11 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-14 items-center px-4">
+      <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <Link href="#home" className="flex items-center">
           <span className="font-bold text-primary">Edwin Oshome</span>
         </Link>
-        <nav className="hidden md:flex flex-1 justify-center items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex flex-grow justify-evenly items-center text-sm font-medium">
           {navLinks.map(({ href, label }) => (
             <Link
               key={label}
@@ -34,7 +34,7 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end md:hidden">
+        <div className="flex items-center justify-end md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -65,9 +65,6 @@ export function Header() {
               </nav>
             </SheetContent>
           </Sheet>
-        </div>
-        <div className="hidden md:flex items-center" style={{ flex: '0 0 auto' }}>
-          {/* This div is to balance the flex layout since the name is on the far left. It takes up no space. */}
         </div>
       </div>
     </header>
