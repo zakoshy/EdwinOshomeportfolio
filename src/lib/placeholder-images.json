@@ -1,12 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "profile-picture",
-      "description": "A portrait of Edwin Oshome",
-      "imageUrl": "https://picsum.photos/seed/edwin/300/300",
-      "imageHint": "man portrait"
-    },
-    {
       "id": "project-church",
       "description": "Placeholder image for a church website project",
       "imageUrl": "https://picsum.photos/seed/church/600/400",
@@ -22,13 +16,13 @@
       "id": "project-university",
       "description": "Placeholder image for a university portal project",
       "imageUrl": "https://picsum.photos/seed/university/600/400",
-      "imageHint": "university building"
+      "imageHint": "university campus"
     },
     {
       "id": "project-hospital",
       "description": "Placeholder image for a hospital portal project",
       "imageUrl": "https://picsum.photos/seed/hospital/600/400",
-      "imageHint": "hospital reception"
+      "imageHint": "hospital building"
     }
   ]
 }
