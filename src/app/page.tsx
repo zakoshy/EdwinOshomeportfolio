@@ -4,7 +4,7 @@ import { Profile } from '@/components/profile';
 import { Projects } from '@/components/projects';
 import { Skills } from '@/components/skills';
 import { Contact } from '@/components/contact';
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, X } from 'lucide-react';
 import Link from 'next/link';
 
 function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -40,8 +40,8 @@ export default function Home() {
       <footer className="bg-primary py-6 text-primary-foreground">
         <div className="container mx-auto px-4 flex flex-col items-center gap-4">
           <div className="flex gap-4">
-            <Link href="https://twitter.com/edwindeZak74715" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter">
-              <Twitter className="h-6 w-6 hover:opacity-80 transition-opacity" />
+            <Link href="https://twitter.com/edwindeZak74715" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
+              <X className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
             <Link href="https://www.facebook.com/profile.php?id=100077827940933" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <Facebook className="h-6 w-6 hover:opacity-80 transition-opacity" />
