@@ -16,19 +16,19 @@
       "id": "project-youth",
       "description": "Placeholder image for a youth group platform project",
       "imageUrl": "https://picsum.photos/seed/youth/600/400",
-      "imageHint": "group people"
+      "imageHint": "group young people"
     },
     {
       "id": "project-university",
       "description": "Placeholder image for a university portal project",
       "imageUrl": "https://picsum.photos/seed/university/600/400",
-      "imageHint": "university campus"
+      "imageHint": "university building"
     },
     {
       "id": "project-hospital",
       "description": "Placeholder image for a hospital portal project",
       "imageUrl": "https://picsum.photos/seed/hospital/600/400",
-      "imageHint": "hospital interior"
+      "imageHint": "hospital reception"
     }
   ]
 }

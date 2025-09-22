@@ -62,7 +62,7 @@ export function Projects() {
           {projectData.map((project) => (
             <Card
               key={project.id}
-              className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
             >
               <div className="relative aspect-video w-full overflow-hidden">
                 <Image
