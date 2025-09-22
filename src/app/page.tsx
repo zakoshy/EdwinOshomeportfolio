@@ -4,7 +4,7 @@ import { Profile } from '@/components/profile';
 import { Projects } from '@/components/projects';
 import { Skills } from '@/components/skills';
 import { Contact } from '@/components/contact';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
 function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -51,6 +51,9 @@ export default function Home() {
             </Link>
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Instagram className="h-6 w-6 hover:opacity-80 transition-opacity" />
+            </Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Linkedin className="h-6 w-6 hover:opacity-80 transition-opacity" />
             </Link>
           </div>
           <p>&copy; {new Date().getFullYear()} Edwin Oshome. All rights reserved.</p>
