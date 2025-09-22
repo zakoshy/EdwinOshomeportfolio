@@ -56,7 +56,7 @@ const projectData = [
     title: 'ContentFlow AI',
     description:
       'Helps businesses and content creators post content on social media platforms, saving time.',
-    image: '/contentAI.jpg',
+    image: '/contentflow.jpg',
     liveUrl: '#',
     githubUrl: '#',
   },
