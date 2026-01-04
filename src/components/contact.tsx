@@ -65,6 +65,15 @@ export function Contact() {
                     +254 741 157 757
                   </span>
                 </Link>
+                <Link
+                  href="tel:+254792294870"
+                  className="flex items-center gap-3 group"
+                >
+                  <Phone className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
+                  <span className="text-foreground group-hover:text-accent transition-colors">
+                    +254 792 294 870
+                  </span>
+                </Link>
               </CardContent>
             </Card>
             <Card className="shadow-lg">
