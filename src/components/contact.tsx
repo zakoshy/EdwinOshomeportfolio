@@ -10,7 +10,6 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 
@@ -46,7 +45,7 @@ export function Contact() {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3 group">
                   <MapPin className="h-6 w-6 text-muted-foreground group-hover:text-accent transition-colors" />
-                  <span className="text-foreground">Mombasa, Kenya</span>
+                  <span className="text-foreground">Nairobi, Mombasa, Kenya</span>
                 </div>
                 <Link
                   href="mailto:edwinoshome37@gmail.com"
