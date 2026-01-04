@@ -33,12 +33,10 @@ export function Profile() {
                   project to meet real-world needs.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                   Additionally, I specialize in integrating
-                  AI-powered features that enhance efficiency and engagement. 
-                  One example I have created is ContentFlow AI, a tool I developed to
-                  streamline social media management and save valuable time for
+                   Beyond web development, I specialize in integrating
+                  AI-powered features that enhance efficiency and engagement. I build and train custom chatbots with organizational data to create intelligent, automated assistants. One example is ContentFlow AI, a tool I developed to streamline social media posting and save valuable time for
                   users. My approach blends engineering precision with
-                  innovative software design, ensuring that every platform I deliver
+                  innovative software design, ensuring every platform I deliver
                   is impactful, user-friendly, and intelligent.
                 </p>
               </CardContent>
