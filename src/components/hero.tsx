@@ -20,7 +20,7 @@ export function Hero() {
             to web platforms.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
+            <Button asChild size="lg">
               <Link href="#contact">Contact Me</Link>
             </Button>
             <Button asChild size="lg" variant="outline">

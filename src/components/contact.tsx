@@ -100,7 +100,7 @@ export function Contact() {
                   />
                   <Button
                     type="submit"
-                    className="w-full bg-accent hover:bg-accent/90"
+                    className="w-full"
                   >
                     Send Message
                   </Button>
