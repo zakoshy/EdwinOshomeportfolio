@@ -25,15 +25,6 @@ const projectData = [
     githubUrl: 'https://github.com/zakoshy/changara-ifc',
   },
   {
-    id: 'contentflow-ai',
-    title: 'ContentFlow AI',
-    description:
-      'Helps businesses and content creators post content on social media platforms, saving time.',
-    image: '/contentflow.jpg',
-    liveUrl: 'https://contentflow-roan.vercel.app/',
-    githubUrl: 'https://github.com/zakoshy/contentflow',
-  },
-  {
     id: 'university-portal',
     title: 'University Portal System',
     description:
@@ -52,12 +43,21 @@ const projectData = [
     githubUrl: 'https://github.com/zakoshy/Hospital-frontend',
   },
   {
+    id: 'contentflow-ai',
+    title: 'ContentFlow AI',
+    description:
+      'Helps businesses and content creators post content on social media platforms, saving time.',
+    image: '/contentflow.jpg',
+    liveUrl: 'https://contentflow-roan.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/contentflow',
+  },
+  {
     id: 'youth-platform',
     title: 'Youth Group Platform',
     description:
       'An engaging platform for youth groups with resource sharing and activity coordination.',
     image: '/youth.jpg',
-    liveUrl: '#',
+    liveUrl: 'https://empowers-youth-group.vercel.app/',
     githubUrl: '#',
   },
 ];
