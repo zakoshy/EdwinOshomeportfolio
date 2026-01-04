@@ -8,6 +8,7 @@ const devSkills = [
   { name: 'React / Next.js', level: 90, icon: <Atom className="h-6 w-6 text-accent" /> },
   { name: 'React Native', level: 85, icon: <Atom className="h-6 w-6 text-accent" /> },
   { name: 'Node.js', level: 85, icon: <Server className="h-6 w-6 text-accent" /> },
+  { name: 'Python', level: 70, icon: <Code className="h-6 w-6 text-accent" /> },
   { name: 'MongoDB', level: 80, icon: <Database className="h-6 w-6 text-accent" /> },
   { name: 'Tailwind CSS', level: 95, icon: <Wind className="h-6 w-6 text-accent" /> },
 ];
