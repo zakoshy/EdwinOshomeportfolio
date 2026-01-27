@@ -58,7 +58,7 @@ const projectData = [
       'An engaging platform for youth groups with resource sharing and activity coordination.',
     image: '/youth.jpg',
     liveUrl: 'https://empowers-youth-group.vercel.app/',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/zakoshy/Empowers-Youth-Group',
   },
 ];
 
