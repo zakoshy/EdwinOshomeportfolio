@@ -2,27 +2,27 @@
 {
   "projects": {
     "contentflow": {
-      "url": "https://picsum.photos/seed/contentflow/600/400",
+      "url": "/contentflow.jpg",
       "hint": "social media dashboard"
     },
     "rag": {
-      "url": "https://picsum.photos/seed/ai/600/400",
+      "url": "/rag.jpg",
       "hint": "artificial intelligence"
     },
     "hotel": {
-      "url": "https://picsum.photos/seed/hotel/600/400",
+      "url": "/hotel.jpg",
       "hint": "luxury hotel"
     },
     "youth": {
-      "url": "https://picsum.photos/seed/youth/600/400",
+      "url": "/youth.jpg",
       "hint": "community group"
     },
     "cars": {
-      "url": "https://picsum.photos/seed/cars/600/400",
+      "url": "/cars.jpg",
       "hint": "luxury cars"
     },
     "timber": {
-      "url": "https://picsum.photos/seed/timber/600/400",
+      "url": "/timber.jpg",
       "hint": "timber furniture"
     }
   }
