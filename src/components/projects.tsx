@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -15,33 +14,6 @@ import { Github, Globe } from 'lucide-react';
 import Link from 'next/link';
 
 const projectData = [
-  {
-    id: 'church-website',
-    title: 'Church Website',
-    description:
-      'A comprehensive website for a local church, featuring event management and community forums.',
-    image: '/church.jpg',
-    liveUrl: 'https://www.ifcchangara.co.ke/',
-    githubUrl: 'https://github.com/zakoshy/changara-ifc',
-  },
-  {
-    id: 'university-portal',
-    title: 'University Portal System',
-    description:
-      'A robust portal system for a university, handling student information and course management.',
-    image: '/university.jpg',
-    liveUrl: 'https://university-frontend-t3q7.onrender.com',
-    githubUrl: 'https://github.com/zakoshy/university-frontend',
-  },
-  {
-    id: 'hospital-portal',
-    title: 'Hospital Portal',
-    description:
-      'A secure portal for a hospital, managing patient records and appointments.',
-    image: '/hospital.jpg',
-    liveUrl: 'https://hospital-frontend-amber.vercel.app/',
-    githubUrl: 'https://github.com/zakoshy/Hospital-frontend',
-  },
   {
     id: 'contentflow-ai',
     title: 'ContentFlow AI',
