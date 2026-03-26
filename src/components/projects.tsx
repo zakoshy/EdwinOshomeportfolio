@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -33,8 +32,8 @@ const projectData = [
       'A RAG-based intelligent assistant trained on specific youth group constitutions to provide instant, accurate policy guidance.',
     image: placeholderImages.projects.rag.url,
     hint: placeholderImages.projects.rag.hint,
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://empowersyouthchatbot.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/empowersyouthchatbot',
   },
   {
     id: 'hotel-website',
@@ -43,8 +42,8 @@ const projectData = [
       'A high-end hotel management platform featuring room booking samples, service management, and a premium guest interface.',
     image: placeholderImages.projects.hotel.url,
     hint: placeholderImages.projects.hotel.hint,
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://coast-hotel.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/coast-hotel',
   },
   {
     id: 'youth-platform',
@@ -63,8 +62,8 @@ const projectData = [
       'A professional marketplace specializing in the sale and procurement of high-quality imported vehicles.',
     image: placeholderImages.projects.cars.url,
     hint: placeholderImages.projects.cars.hint,
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://al-zia-motors.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/AL-ZIA-MOTORS',
   },
   {
     id: 'timber-sales',
@@ -73,8 +72,8 @@ const projectData = [
       'An e-commerce platform for premium timber products including bespoke beds, chairs, and office furniture.',
     image: placeholderImages.projects.timber.url,
     hint: placeholderImages.projects.timber.hint,
-    liveUrl: '#',
-    githubUrl: '#',
+    liveUrl: 'https://timber-sales.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/timber-sales',
   },
 ];
 
