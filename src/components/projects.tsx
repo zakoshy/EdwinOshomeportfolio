@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -12,25 +13,68 @@ import {
 } from '@/components/ui/card';
 import { Github, Globe } from 'lucide-react';
 import Link from 'next/link';
+import placeholderImages from '@/app/lib/placeholder-images.json';
 
 const projectData = [
   {
     id: 'contentflow-ai',
     title: 'ContentFlow AI',
     description:
-      'Helps businesses and content creators post content on social media platforms, saving time.',
-    image: '/contentflow.jpg',
+      'A powerful automation tool that helps businesses and content creators schedule and post content across multiple social media platforms.',
+    image: placeholderImages.projects.contentflow.url,
+    hint: placeholderImages.projects.contentflow.hint,
     liveUrl: 'https://contentflow-roan.vercel.app/',
     githubUrl: 'https://github.com/zakoshy/contentflow',
+  },
+  {
+    id: 'rag-chatbot',
+    title: 'Constitution AI Chatbot',
+    description:
+      'A RAG-based intelligent assistant trained on specific youth group constitutions to provide instant, accurate policy guidance.',
+    image: placeholderImages.projects.rag.url,
+    hint: placeholderImages.projects.rag.hint,
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    id: 'hotel-website',
+    title: 'Luxury Stay Hotel',
+    description:
+      'A high-end hotel management platform featuring room booking samples, service management, and a premium guest interface.',
+    image: placeholderImages.projects.hotel.url,
+    hint: placeholderImages.projects.hotel.hint,
+    liveUrl: '#',
+    githubUrl: '#',
   },
   {
     id: 'youth-platform',
     title: 'Youth Group Platform',
     description:
-      'An engaging platform for youth groups with resource sharing and activity coordination.',
-    image: '/youth.jpg',
+      'A comprehensive digital home for youth organizations, facilitating resource sharing and event coordination.',
+    image: placeholderImages.projects.youth.url,
+    hint: placeholderImages.projects.youth.hint,
     liveUrl: 'https://empowers-youth-group.vercel.app/',
     githubUrl: 'https://github.com/zakoshy/Empowers-Youth-Group',
+  },
+  {
+    id: 'car-sales',
+    title: 'Elite Auto Imports',
+    description:
+      'A professional marketplace specializing in the sale and procurement of high-quality imported vehicles.',
+    image: placeholderImages.projects.cars.url,
+    hint: placeholderImages.projects.cars.hint,
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    id: 'timber-sales',
+    title: 'Heritage Timber Works',
+    description:
+      'An e-commerce platform for premium timber products including bespoke beds, chairs, and office furniture.',
+    image: placeholderImages.projects.timber.url,
+    hint: placeholderImages.projects.timber.hint,
+    liveUrl: '#',
+    githubUrl: '#',
   },
 ];
 
@@ -59,14 +103,14 @@ export function Projects() {
           {projectData.slice(0, visibleProjects).map((project) => (
             <Card
               key={project.id}
-              className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
+              className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group border-muted"
             >
-              <div className="relative aspect-video w-full overflow-hidden">
+              <div className="relative aspect-video w-full overflow-hidden bg-muted">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={600}
-                  height={400}
+                  fill
+                  data-ai-hint={project.hint}
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
@@ -74,7 +118,7 @@ export function Projects() {
                 <CardTitle className="text-xl font-bold">
                   {project.title}
                 </CardTitle>
-                <CardDescription className="mt-2 text-base">
+                <CardDescription className="mt-2 text-base leading-relaxed">
                   {project.description}
                 </CardDescription>
               </CardHeader>
@@ -96,12 +140,12 @@ export function Projects() {
         {projectData.length > PROJECTS_VISIBLE_INITIALLY && (
           <div className="mt-12 text-center">
             {visibleProjects < projectData.length ? (
-              <Button onClick={showMore} variant="outline">
-                Show More
+              <Button onClick={showMore} variant="outline" size="lg">
+                Show More Projects
               </Button>
             ) : (
-              <Button onClick={showLess} variant="outline">
-                Show Less
+              <Button onClick={showLess} variant="outline" size="lg">
+                Show Fewer Projects
               </Button>
             )}
           </div>

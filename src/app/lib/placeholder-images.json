@@ -1,0 +1,29 @@
+
+{
+  "projects": {
+    "contentflow": {
+      "url": "https://picsum.photos/seed/contentflow/600/400",
+      "hint": "social media dashboard"
+    },
+    "rag": {
+      "url": "https://picsum.photos/seed/ai/600/400",
+      "hint": "artificial intelligence"
+    },
+    "hotel": {
+      "url": "https://picsum.photos/seed/hotel/600/400",
+      "hint": "luxury hotel"
+    },
+    "youth": {
+      "url": "https://picsum.photos/seed/youth/600/400",
+      "hint": "community group"
+    },
+    "cars": {
+      "url": "https://picsum.photos/seed/cars/600/400",
+      "hint": "luxury cars"
+    },
+    "timber": {
+      "url": "https://picsum.photos/seed/timber/600/400",
+      "hint": "timber furniture"
+    }
+  }
+}
