@@ -58,7 +58,7 @@ const projectData = [
   },
   {
     id: 'car-sales',
-    title: 'Elite Auto Imports',
+    title: 'Elite Car Sales Company',
     description:
       'A professional marketplace specializing in the sale and procurement of high-quality imported vehicles.',
     image: placeholderImages.projects.cars.url,
